@@ -5,7 +5,7 @@ import CONFIG from '../../global/config';
 const restaurantListTemplate = (restaurants) => `
 <div class="card-item">
      <img src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}">
-     <h3 tabindex="0"><a href="${`/#/detail/${restaurants.id}`}">${restaurants.name}</a></h3>
+     <a href="${`/#/detail/${restaurants.id}`}"><h3 tabindex="0">${restaurants.name}</h3></a>
      <p class="card-item-desc" tabindex="0">${restaurants.description}</p>
      <div class="card-item-info">
        <h4 tabindex="0"> Kota ${restaurants.city}</h4>
